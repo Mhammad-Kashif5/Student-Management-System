@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Mang System</title>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+    <h1>Student Management System</h1>
+    <!-- Dashboard -->
+     <!-- navbar -->
+     <nav>
+        <!-- links -->
+     <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#course">Course</a></li>
+        <li><a href="#form">Form</a></li>
+     </ul>
+     </nav>
+    </header>
+    <!-- main Sections -->
+    <main>
+<section id="home">
+    <h2>Welcome to My Student Management System</h2>
+    <p>Welcome to the Student Management System. This platform is designed
+        to manage student records, course information, timetables, and
+        academic results efficiently. It provides an organized way to
+        access and manage educational data.</p>
+</section>
+<!-- Student Statsitics -->
+ <section id="about"><h2>
+ Student Statsitics</h2>
+ <p><Strong>Total Students: </Strong>500</p>
+ <p><Strong>Active Students: </Strong>400</p>
+ <p><strong>Graduated Students: </strong>120</p>
+ <p><strong>Avaliabile Course: </strong>10</p>
+ <p><strong>Instructor: </strong>25</p>
+</section>
+<!-- annocement -->
+ <section id="course">
+    <h2>Latest Announcement</h2>
+    <ul>
+        <li>Web Developmnet</li>
+        <li>Artificial Intelligence</li>
+        <li>Cyber Security</li>
+        <li>Networking</li>
+        <li>Digital Marketing</li>
+        <li>E-Commerece</li>
+    </ul>
+ </section>
+    </main>
+    <h2>TimeTable</h2>
+    <!-- TimeTable -->
+     <table border="1">
+        <!-- Table Header -->
+        <caption><b>Student Course TimeTable</b></caption>
+        <thead>
+            <th>S.No</th>
+            <th>Course Name</th>
+            <th>Start Date</th>
+            <th>End Date</th>
+        </thead>
+        <!-- Table Body -->
+        <tbody>
+            <tr>
+                <th>1</th>
+                <td>Web Developmnet</td>
+                <td> 15 june</td>
+                <td>30 Aguast</td>
+            </tr>
+            <tr>
+                <th>2</th>
+                <td>Artificial Intelligence</td>
+                <td rowspan="2">20 june </td>
+                <td>15 september</td>
+            </tr>
+            <tr>
+                <th>3</th>
+                <td>Networking</td>
+                <!-- <td>20 june</td> -->
+                <td>30 july</td>
+            </tr>
+            <tr>
+                <th>4</th>
+                <td>Digital Marketing</td>
+                <td>25 june</td>
+                <td>30 september</td>
+            </tr>
+            <tr>
+            <th>5</th>
+                <td>E-Commerece</td>
+                <td>15 june </td>
+                <td>15 july</td>
+            </tr>
+        </tbody>
+        <!-- Table footer -->
+         <tfoot><tr> <td colspan="5">Student Course Management System</td></tr> </tfoot>
+     </table>
+<!--    Contact Form  -->
+    <h2 id="form">Contact Form</h2>
+    <form action="">
+        <!-- <label>Profile:</label><br>
+        <input type="file" ><br> -->
+        <label for="profile">Profile Picture:</label><br>
+<input type="file" multiple><br>
+        <label for="username"  >Full Name:</label><br>
+        <input type="text" name="username" id="username" required placeholder="Enter your name"><br>
+        <label for="email">Email:</label><br>
+        <input type="email" name="email" id="email"placeholder="Enter your Email" required><br>
+        <label for="pwd">Password:</label><br>
+        <input type="password" name="password" id="pwd" maxlength="8" minlength="5" required><br>
+        <label for="phone">Phone No:</label><br>
+        <input type="tel" name="phone" id="phone" readonly value="+92" maxlength="11" ><br>
+        <label for="cnic">CNIC:</label><br>
+        <input type="number" id="cnic" maxlength="13" required><br>
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" name="date of Birth" id="dob">
+        <!-- Radio btn -->
+         <p>Gender:</p>
+         <label for="male">
+            <input type="radio" name="Gender" id="male">male 
+         </label><br>
+         <label for="female">
+            <input type="radio" name="Gender" id="female">female
+         </label> <br>
+         <label for="others">
+            <input type="radio" name="Gender" id="others">others
+         </label><br>
+        <label >Country/City:</label><br>
+       <select name="country/city" id="">
+        <optgroup label="Pakistan">
+            <option value="Peshawar">Peshawar</option>
+            <option value="Islamabad">Islamabad</option>
+        </optgroup>
+        <optgroup label="India">
+            <option value="Mummbi">Mummbi</option>
+            <option value="Dehli">Dehli</option>
+        </optgroup>
+        <optgroup label="US">
+            <option value="New Yark">New Yark</option>
+            <option value="Washington DC">Washington DC</option>
+        </optgroup>
+       </select><br>
+       <label for="">Skills:</label><br>
+       <label for="html">HTML</label>
+       <input type="checkbox" name="html" id="html">
+       <label for="css">CSS</label>
+       <input type="checkbox" name="css" id="css">
+       <label for="js">JavaScript</label>
+       <input type="checkbox" name="JavaScript" id="js"><br>
+<input type="submit">
+<input type="reset">
+
+    </form>
+
+<footer>
+    <marquee> &copy;  2026 Student Management System | Developed by Muhammad Kashif</marquee>
+</footer>    
+</body>
+</html>
